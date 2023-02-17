@@ -6,14 +6,130 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="icon" href="favicon.ico" />
 		<link rel="stylesheet" href="styles.css" />
-		<script src="script.js"></script>
 		<title>Dev Calculator by Frank Kelly</title>
 		<meta
 			name="description"
 			content="A simple Calculator built with JS and Tailwind CSS for learning purposes"
 		/>
 	</head>
-	<body class="p-10">
-		<h1 class="text-5xl text-red-600">Hello World!</h1>
+	<body
+		class="flex items-center justify-center min-h-screen m-2 bg-[#0f2027] bg-gradient-to-r from-[#0f2027] via-[#203a43] to-[#2c5364]"
+	>
+		<!-- Calculator -->
+		<div class="calculator w-[400px] bg-gray-200 shadow-md rounded-xl">
+			<!-- Display -->
+			<div
+				class="flex items-center justify-end p-5 m-0 text-white bg-black calculator-display rounded-t-xl"
+			>
+				<h1 class="mr-5 font-mono text-4xl font-thin">0</h1>
+			</div>
+			<!-- Buttons -->
+			<div class="grid grid-cols-4 gap-5 p-5 calculator-buttons">
+				<button
+					class="p-3 text-3xl text-white transition duration-300 bg-gray-500 rounded-md operator hover:brightness-110 active:translate-y-1"
+					value="+"
+				>
+					+
+				</button>
+				<button
+					class="p-3 text-3xl text-white transition duration-300 bg-gray-500 rounded-md operator hover:brightness-110 active:translate-y-1"
+					value="-"
+				>
+					-
+				</button>
+				<button
+					class="p-3 text-3xl text-white transition duration-300 bg-gray-500 rounded-md operator hover:brightness-110 active:translate-y-1"
+					value="*"
+				>
+					×
+				</button>
+				<button
+					class="p-3 text-3xl text-white transition duration-300 bg-gray-500 rounded-md operator hover:brightness-110 active:translate-y-1"
+					value="/"
+				>
+					÷
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="7"
+				>
+					7
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="8"
+				>
+					8
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="9"
+				>
+					9
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="4"
+				>
+					4
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="5"
+				>
+					5
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="6"
+				>
+					6
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="1"
+				>
+					1
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="2"
+				>
+					2
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="3"
+				>
+					3
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-200 border-0 rounded-md cursor-pointer decimal min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="."
+				>
+					.
+				</button>
+				<button
+					class="p-3 text-3xl transition duration-300 bg-blue-400 border-0 rounded-md cursor-pointer number min-h-50 hover:brightness-110 active:translate-y-1 focus:outline-none"
+					value="0"
+				>
+					0
+				</button>
+				<button
+					class="p-3 text-3xl text-white transition duration-300 bg-red-600 rounded-md clear hover:brightness-90 active:translate-y-1"
+					id="clear-btn"
+				>
+					C
+				</button>
+				<button
+					class="col-end-5 row-span-4 row-start-2 text-3xl text-white transition duration-300 bg-green-500 rounded-md equal-sign operator hover:brightness-90 active:translate-y-1"
+					value="="
+				>
+					=
+				</button>
+			</div>
+		</div>
+		<!-- Script -->
+		<script src="script.js"></script>
 	</body>
 </html>
