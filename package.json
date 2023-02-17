@@ -1,7 +1,7 @@
 {
-	"name": "calculator",
+	"name": "Dev Calculator",
 	"version": "1.0.0",
-	"description": "",
+	"description": "A simple calculator built using JS and Tailwind CSS for learning purposes.",
 	"scripts": {
 		"start": "live-server public",
 		"build": "tailwindcss -i ./src/tailwind.css -o ./public/styles.css --watch"
